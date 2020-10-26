@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.seleniumeasy.testcases.AlertPopUpTest"/>
+      <class name="com.seleniumeasy.testcases.SelectDropDownTest"/>
+      <class name="com.praticeflipkart.testcases.LoginTest"/>
+      <class name="com.seleniumeasy.testcases.TableTest"/>
+      <class name="com.seleniumeasy.testcases.RadioButtonTest"/>
+      <class name="com.seleniumeasy.testcases.SimpleFormTest"/>
+      <class name="com.praticeflipkart.testcases.ElectronicsMobileTest"/>
+      <class name="com.seleniumeasy.testcases.CheckBoxTest"/>
+      <class name="com.seleniumeasy.testcases.DragAndDropTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
