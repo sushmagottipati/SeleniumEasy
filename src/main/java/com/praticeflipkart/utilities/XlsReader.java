@@ -66,7 +66,7 @@ public class XlsReader {
 		int columnIndex = -1;
 
 		try {
-			//File file = new File("D:\\flipkartlogin.xlsx");
+			File file = new File("D:\\flipkartlogin.xlsx");
 			  //File file = new File("D:\\simpleinputform.xlsx");
 			 // File file = new File("D:\\dropdown.xlsx");
 			 //File file = new File("C:\\Users\\dell\\eclipse-workspace\\PraticeFilpKart\\lib\\dropdown.xlsx");
@@ -74,8 +74,7 @@ public class XlsReader {
 
 
 
-			
-			//fileInputStream = new FileInputStream(file);
+			fileInputStream = new FileInputStream(file);
 			workBook = new XSSFWorkbook(fileInputStream);
 
 			int index = workBook.getSheetIndex(sheetName);

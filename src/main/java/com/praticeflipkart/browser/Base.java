@@ -55,9 +55,9 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
 
-		driver.get("https://www.seleniumeasy.com/");
+		//driver.get("https://www.seleniumeasy.com/");
 
-		//driver.get("https://www.flipkart.com/");
+		driver.get("https://www.flipkart.com/");
 		
 		//driver.get("http://demo.guru99.com/test/upload/");
 		//driver.get("https://www.google.com/search?q=sample+text+file+to+download&oq=sample+text+file+to+&aqs=chrome.0.0i457j69i57j0i22i30l6.10139j0j7&sourceid=chrome&ie=UTF-8");

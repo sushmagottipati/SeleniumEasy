@@ -30,7 +30,9 @@ public class LoginScript {
 
 		String xlsreader_password = xlsreader.getCellDataByColumnName("Sheet1", "password", 1);
 
-		loginpage.password.sendKeys("xlsreader_password");
+		loginpage.password.sendKeys(xlsreader_password);
+		
+		
 	}
 	public void validUsername_invalidPassword_Login() {
 
@@ -40,7 +42,7 @@ public class LoginScript {
 
 		String xlsreader_password = xlsreader.getCellDataByColumnName("Sheet1", "password", 2);
 
-		loginpage.password.sendKeys("xlsreader_password");
+		loginpage.password.sendKeys(xlsreader_password);
 	}
 	public void invalidUsername_InvalidPassword_Login() {
 
@@ -50,7 +52,7 @@ public class LoginScript {
 
 		String xlsreader_password = xlsreader.getCellDataByColumnName("Sheet1", "password", 3);
 
-		loginpage.password.sendKeys("xlsreader_password");
+		loginpage.password.sendKeys(xlsreader_password);
 	}
 
 	public void validUsername_ValidPassword_Login() {
@@ -66,7 +68,7 @@ public class LoginScript {
 
 		System.out.println("password  "      +xlsreader_password);
 
-		loginpage.password.sendKeys("xlsreader_password");
+		loginpage.password.sendKeys(xlsreader_password);
 
 		System.out.println("password  "      +xlsreader_password);
 

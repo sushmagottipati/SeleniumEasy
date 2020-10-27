@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.seleniumeasy.testcases.DownloadFileTest">
+      <class name="com.praticeflipkart.testcases.LoginTest">
         <methods>
-          <include name="TC_001_uploadFile"/>
-          <include name="lunchRequriments"/>
+          <include name="launch"/>
+          <include name="TC_002_flipKartLogin"/>
           <include name="tearDown"/>
+          <include name="TC_004_flipKartLogin"/>
+          <include name="TC_003_flipKartLogin"/>
         </methods>
-      </class> <!-- com.seleniumeasy.testcases.DownloadFileTest -->
+      </class> <!-- com.praticeflipkart.testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
