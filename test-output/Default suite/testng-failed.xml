@@ -6,10 +6,8 @@
       <class name="com.praticeflipkart.testcases.LoginTest">
         <methods>
           <include name="launch"/>
-          <include name="TC_002_flipKartLogin"/>
           <include name="tearDown"/>
           <include name="TC_004_flipKartLogin"/>
-          <include name="TC_003_flipKartLogin"/>
         </methods>
       </class> <!-- com.praticeflipkart.testcases.LoginTest -->
     </classes>

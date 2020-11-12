@@ -13,6 +13,8 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.praticeflipkart.browser.AppSettings;
+
 
 public class XlsReader {
 
@@ -50,7 +52,8 @@ public class XlsReader {
 
 	public String getCellDataByColumnIndex(String sheetName, int columnIndex, int rowIndex) {
 		try {
-			 File file = new File("D:\\simpleinputform.xlsx");
+			// File file = new File("D:\\simpleinputform.xlsx");
+			File file = new File(AppSettings.Xlpath);
 			fileInputStream = new FileInputStream(file);
 			workBook = new XSSFWorkbook(fileInputStream);
 
@@ -70,7 +73,7 @@ public class XlsReader {
 			  //File file = new File("D:\\simpleinputform.xlsx");
 			 // File file = new File("D:\\dropdown.xlsx");
 			 //File file = new File("C:\\Users\\dell\\eclipse-workspace\\PraticeFilpKart\\lib\\dropdown.xlsx");
-			
+			 
 
 
 

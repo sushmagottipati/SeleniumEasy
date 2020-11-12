@@ -3,6 +3,7 @@ package com.praticeflipkart.script;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import com.praticeflipkart.browser.Base;
 import com.praticeflipkart.datasets.DataSet_Login;
 import com.praticeflipkart.pageobjects.LoginPage;
 import com.praticeflipkart.utilities.XlsReader;
@@ -12,6 +13,8 @@ public class LoginScript {
 	LoginPage loginpage = null;
 
 	XlsReader xlsreader = new XlsReader();
+	
+	Base base = new Base();
 
 
 
@@ -33,8 +36,12 @@ public class LoginScript {
 		loginpage.password.sendKeys(xlsreader_password);
 		
 		
+		
+		
 	}
-	public void validUsername_invalidPassword_Login() {
+	public boolean validUsername_invalidPassword_Login() {
+		
+		boolean title = false;
 
 		String xlsreader_username = xlsreader.getCellDataByColumnName("Sheet1", "username", 2);
 
@@ -43,6 +50,20 @@ public class LoginScript {
 		String xlsreader_password = xlsreader.getCellDataByColumnName("Sheet1", "password", 2);
 
 		loginpage.password.sendKeys(xlsreader_password);
+		
+		String  currenttitle = base.getTitle();
+		
+		if(currenttitle.contains("Online Shopping Site for Mobiles")) {
+			
+			title = true;
+		}else {
+			
+			title = false;
+		}
+		
+		return title;
+			
+				
 	}
 	public void invalidUsername_InvalidPassword_Login() {
 
@@ -75,9 +96,11 @@ public class LoginScript {
 		//loginpage.password.sendKeys(DataSet_Login.password);
 
 	}
-	public void login_Button()
+	public boolean login_Button()
 	{
 		loginpage.login_button.click();
+		
+		return true;
 
 	}
 	

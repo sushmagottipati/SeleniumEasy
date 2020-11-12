@@ -1,61 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
+<testng-results skipped="0" failed="1" ignored="1" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67645" started-at="2020-10-27T22:05:58 IST" finished-at="2020-10-27T22:07:06 IST">
+  <suite name="Suite" duration-ms="48570" started-at="2020-11-05T22:42:32 IST" finished-at="2020-11-05T22:43:21 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="67645" started-at="2020-10-27T22:05:58 IST" finished-at="2020-10-27T22:07:06 IST">
+    <test name="Test" duration-ms="48570" started-at="2020-11-05T22:42:32 IST" finished-at="2020-11-05T22:43:21 IST">
       <class name="com.praticeflipkart.testcases.LoginTest">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="15023" started-at="2020-10-27T22:05:58 IST" finished-at="2020-10-27T22:06:13 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="47262" started-at="2020-11-05T22:42:32 IST" finished-at="2020-11-05T22:43:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="TC_001_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_001_flipKartLogin" duration-ms="1894" started-at="2020-10-27T22:06:13 IST" finished-at="2020-10-27T22:06:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_001_flipKartLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-10-27T22:06:15 IST" finished-at="2020-10-27T22:06:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="15060" started-at="2020-10-27T22:06:15 IST" finished-at="2020-10-27T22:06:30 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="40618" started-at="2020-11-05T22:42:32 IST" finished-at="2020-11-05T22:43:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="TC_002_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_002_flipKartLogin" duration-ms="715" started-at="2020-10-27T22:06:30 IST" finished-at="2020-10-27T22:06:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_002_flipKartLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-10-27T22:06:31 IST" finished-at="2020-10-27T22:06:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="14944" started-at="2020-10-27T22:06:31 IST" finished-at="2020-10-27T22:06:46 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="35642" started-at="2020-11-05T22:42:32 IST" finished-at="2020-11-05T22:43:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="TC_003_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_003_flipKartLogin" duration-ms="783" started-at="2020-10-27T22:06:46 IST" finished-at="2020-10-27T22:06:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_003_flipKartLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-10-27T22:06:47 IST" finished-at="2020-10-27T22:06:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="18480" started-at="2020-10-27T22:06:47 IST" finished-at="2020-10-27T22:07:05 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="launch" is-config="true" duration-ms="44203" started-at="2020-11-05T22:42:32 IST" finished-at="2020-11-05T22:43:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="TC_004_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_004_flipKartLogin" duration-ms="643" started-at="2020-10-27T22:07:05 IST" finished-at="2020-10-27T22:07:06 IST">
+        <test-method status="FAIL" signature="TC_004_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_004_flipKartLogin" duration-ms="11745" started-at="2020-11-05T22:43:08 IST" finished-at="2020-11-05T22:43:20 IST">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DELL-PC', ip: '192.168.43.45', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2b747b54bec0da7a52ac86a6600a2308]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DELL-PC', ip: '192.168.43.45', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2b747b54bec0da7a52ac86a6600a2308
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:115)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+at com.praticeflipkart.script.LoginScript.validUsername_ValidPassword_Login(LoginScript.java:83)
+at com.praticeflipkart.testcases.LoginTest.TC_004_flipKartLogin(LoginTest.java:62)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_004_flipKartLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-10-27T22:07:06 IST" finished-at="2020-10-27T22:07:06 IST">
+        <test-method status="PASS" signature="TC_001_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_001_flipKartLogin" duration-ms="7708" started-at="2020-11-05T22:43:13 IST" finished-at="2020-11-05T22:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_flipKartLogin -->
+        <test-method status="PASS" signature="TC_002_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_002_flipKartLogin" duration-ms="4226" started-at="2020-11-05T22:43:16 IST" finished-at="2020-11-05T22:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_flipKartLogin -->
+        <test-method status="PASS" signature="TC_003_flipKartLogin()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="TC_003_flipKartLogin" duration-ms="1237" started-at="2020-11-05T22:43:20 IST" finished-at="2020-11-05T22:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_flipKartLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-11-05T22:43:20 IST" finished-at="2020-11-05T22:43:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-11-05T22:43:21 IST" finished-at="2020-11-05T22:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-11-05T22:43:21 IST" finished-at="2020-11-05T22:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.praticeflipkart.testcases.LoginTest@5bfbf16f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-11-05T22:43:21 IST" finished-at="2020-11-05T22:43:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.praticeflipkart.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

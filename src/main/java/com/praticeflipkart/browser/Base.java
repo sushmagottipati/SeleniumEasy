@@ -3,6 +3,7 @@ package com.praticeflipkart.browser;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
@@ -40,13 +41,13 @@ public class Base {
 	{
 
 		WebDriverManager.chromedriver().setup();
-		
+
 		driver = new  ChromeDriver();
 
-		
-		
+
+
 		//WebDriverManager.firefoxdriver().setup();
-		
+
 		//driver = new FirefoxDriver();
 
 
@@ -58,7 +59,7 @@ public class Base {
 		//driver.get("https://www.seleniumeasy.com/");
 
 		driver.get("https://www.flipkart.com/");
-		
+
 		//driver.get("http://demo.guru99.com/test/upload/");
 		//driver.get("https://www.google.com/search?q=sample+text+file+to+download&oq=sample+text+file+to+&aqs=chrome.0.0i457j69i57j0i22i30l6.10139j0j7&sourceid=chrome&ie=UTF-8");
 
@@ -66,28 +67,39 @@ public class Base {
 
 	}
 	
+	public void verifyFileDownload(String pathname) {
+		
+		File file = new File(pathname);
+		if(file.exists()) {
+			
+			System.out.println("file exist");
+		}else {
+			System.out.println("file does not exist");
+		}
+	}
+
 	public void windowResize() {
-	
+
 		Dimension dimension = new Dimension(10000, 10000);
-		
-		
-		
+
+
+
 		driver.manage().window().setSize(dimension);
 	}
-	
+
 	public void windowMaximize() {
-		
+
 		driver.manage().window().maximize();
 
 	}
-	
+
 	public FirefoxOptions fileDownload_FireFoxBrowser()
 	{
 		FirefoxProfile firefoxprofile = new FirefoxProfile();
 		firefoxprofile.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/plan,application/pdf");
 		firefoxprofile.setPreference("browser.download.manager.showWhenStarting", false);
 		firefoxprofile.setPreference("pdfjs.disabled", true);
-		
+
 		FirefoxOptions firefoxoptions = new FirefoxOptions();
 		firefoxoptions.setProfile(firefoxprofile);
 		return firefoxoptions;
@@ -250,10 +262,17 @@ public class Base {
 
 		driver.switchTo().alert().getText();
 	}
-	
+
 	public void switchToAlert_SendKeys(String name) {
 
 		driver.switchTo().alert().sendKeys(name);
+	}
+
+	public String getTitle() {
+
+		String title = driver.getTitle(); 
+
+		return title;
 	}
 
 

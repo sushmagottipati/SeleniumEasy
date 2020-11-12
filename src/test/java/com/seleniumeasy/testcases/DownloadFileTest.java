@@ -24,9 +24,9 @@ public class DownloadFileTest extends Base{
 
 		driver = browserLaunch();
 
-		radiobuttonpage = new RadioButtonPage(driver);
+		//radiobuttonpage = new RadioButtonPage(driver);
 
-		windowpopupscript = new WindowPopUpScript(driver);
+		//windowpopupscript = new WindowPopUpScript(driver);
 
 		downloadfilescript = new DownloadFileScript(driver);
 
@@ -36,18 +36,25 @@ public class DownloadFileTest extends Base{
 	@Test
 	public void TC_001_uploadFile() {
 
-		//downloadfilescript.download_File();
+		downloadfilescript.download_File();
+		//downloadfilescript.verify_FileDownload();
 		
-		radiobuttonpage.demoButton();
+		/*
+		 * radiobuttonpage.demoButton();
+		 * 
+		 * radiobuttonpage.closeCrossMark();
+		 * 
+		 * windowpopupscript.alert_Modals();
+		 * 
+		 * downloadfilescript.file_Download();
+		 */
+	}
+	@Test
+	public void TC_002_verify_FileDownload() {
 		
-		radiobuttonpage.closeCrossMark();
-		
-		windowpopupscript.alert_Modals();
-		
-		downloadfilescript.file_Download();
-		
-		
+		downloadfilescript.verify_FileDownload();
 
+		
 	}
 
 	@AfterMethod

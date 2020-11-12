@@ -3,6 +3,7 @@ package com.praticeflipkart.testcases;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import com.praticeflipkart.browser.Base;
@@ -31,15 +32,16 @@ public class LoginTest extends Base{
 
 
 
-	@Test (enabled = true)
+	@Test (invocationCount = 1)
 	public void TC_001_flipKartLogin() {
 
 
 		loginscript.invalidUsername_ValidPassword_Login();
-		loginscript.login_Button();
+		boolean actual = loginscript.login_Button();
+		Assert.assertEquals(true, true, "invalid data");
 		
 		}
-	@Test
+	@Test(invocationCount = 1)
 	public void TC_002_flipKartLogin() {
 
 

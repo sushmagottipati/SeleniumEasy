@@ -35,7 +35,7 @@ public class AlertPopUpTest extends Base {
 		
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_001_switchToAlert()
 	{
 		
@@ -47,7 +47,7 @@ public class AlertPopUpTest extends Base {
 			
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_002_switchToAlert()
 	{
 		

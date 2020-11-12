@@ -22,6 +22,12 @@ public class DownloadFileScript {
 		
 		downloadfilepage.download_File.click();	
 	}
+	public void verify_FileDownload() {
+		
+		String path = "C:\\Users\\dell\\Downloads\\sample.txt";
+		
+		base.verifyFileDownload(path);
+	}
 	
 	public void file_Download() {
 		
