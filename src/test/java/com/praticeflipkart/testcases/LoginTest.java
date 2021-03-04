@@ -1,5 +1,7 @@
 package com.praticeflipkart.testcases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +21,7 @@ public class LoginTest extends Base{
 	WebDriver driver = null;
 
 	@BeforeMethod
-	public void launch() throws InterruptedException
+	public void launch() throws InterruptedException, IOException
 	{
 		driver = browserLaunch();
 
@@ -32,7 +34,7 @@ public class LoginTest extends Base{
 
 
 
-	@Test (invocationCount = 1)
+	@Test (enabled = false,invocationCount = 1)
 	public void TC_001_flipKartLogin() {
 
 
@@ -41,21 +43,21 @@ public class LoginTest extends Base{
 		Assert.assertEquals(true, true, "invalid data");
 		
 		}
-	@Test(invocationCount = 1)
+	@Test(enabled = false,invocationCount = 1)
 	public void TC_002_flipKartLogin() {
 
 
 		loginscript.validUsername_invalidPassword_Login();
 		loginscript.login_Button();
 		}
-	@Test
+	@Test(enabled = false)
 	public void TC_003_flipKartLogin() {
 
 
 		loginscript.invalidUsername_InvalidPassword_Login();
 		loginscript.login_Button();
 		}
-	@Test
+	@Test(enabled = false)
 	public void TC_004_flipKartLogin() {
 
 
@@ -63,13 +65,15 @@ public class LoginTest extends Base{
 		loginscript.login_Button();
 		}
 	
-	@Test(enabled = false)
-	public void TC_005_searchProducts() throws InterruptedException 
+	@Test(enabled = true)
+	public void TC_005_searchProducts() throws InterruptedException, IOException 
 	{
 
 		loginscript.validUsername_ValidPassword_Login();
-
+		loginscript.login_Button();
+		Thread.sleep(3000);
 		searchscript.search();
+		takeScreenshot("flipkartlogin");
 	}
 
 	@AfterMethod

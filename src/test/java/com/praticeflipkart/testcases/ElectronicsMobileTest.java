@@ -1,6 +1,7 @@
 package com.praticeflipkart.testcases;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -23,7 +24,7 @@ public class ElectronicsMobileTest extends Base {
 	
 
 	@BeforeMethod
-	public void launch() throws InterruptedException
+	public void launch() throws InterruptedException, IOException
 	{
 		driver = browserLaunch();
 		

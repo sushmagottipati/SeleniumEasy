@@ -4,14 +4,18 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,7 +41,7 @@ public class Base {
 
 
 
-	public WebDriver browserLaunch()
+	public WebDriver browserLaunch() throws IOException
 	{
 
 		WebDriverManager.chromedriver().setup();
@@ -56,15 +60,23 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
 
-		//driver.get("https://www.seleniumeasy.com/");
+		driver.get("https://www.seleniumeasy.com/");
 
-		driver.get("https://www.flipkart.com/");
+		//driver.get("https://www.flipkart.com/");
+		takeScreenshot("flipkart");
 
 		//driver.get("http://demo.guru99.com/test/upload/");
 		//driver.get("https://www.google.com/search?q=sample+text+file+to+download&oq=sample+text+file+to+&aqs=chrome.0.0i457j69i57j0i22i30l6.10139j0j7&sourceid=chrome&ie=UTF-8");
 
 		return driver;
 
+	}
+	
+	public static void takeScreenshot(String filename) throws IOException {
+		
+		File file =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(file,new File("C:\\Users\\dell\\eclipse-workspace\\PraticeSeleniumEasy\\src\\main\\java\\Screenshot\\"+filename+".jpg"));
 	}
 	
 	public void verifyFileDownload(String pathname) {

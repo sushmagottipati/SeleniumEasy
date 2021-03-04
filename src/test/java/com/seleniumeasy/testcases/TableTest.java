@@ -1,5 +1,7 @@
 package com.seleniumeasy.testcases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +24,7 @@ public class TableTest extends Base{
 	TableScript tablescript = null;
 
 	@BeforeMethod
-	public void launch() throws InterruptedException
+	public void launch() throws InterruptedException, IOException
 	{
 		driver = browserLaunch();
 
