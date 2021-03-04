@@ -1,5 +1,7 @@
 package com.seleniumeasy.testcases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -20,7 +22,7 @@ WebDriver driver = null;
 	WindowPopUpScript windowpopupscript = null;
 
 	@BeforeMethod
-	public void launch() throws InterruptedException{
+	public void launch() throws InterruptedException, IOException{
 	
 		driver = browserLaunch();
 		

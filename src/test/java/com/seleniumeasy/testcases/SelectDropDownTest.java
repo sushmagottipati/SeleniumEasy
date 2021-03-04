@@ -1,5 +1,7 @@
 package com.seleniumeasy.testcases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +21,7 @@ public class SelectDropDownTest extends Base {
 
 	SelectDropDownScript selectdropdownscript = null;
 	@BeforeMethod
-	public void lunchRequriments()
+	public void lunchRequriments() throws IOException
 	{
 		driver = browserLaunch();
 		

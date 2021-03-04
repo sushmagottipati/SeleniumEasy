@@ -1,6 +1,7 @@
 package com.seleniumeasy.testcases;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -24,7 +25,7 @@ public class AlertPopUpTest extends Base {
 	AlertPopUpScript alertpopupscript = null;
 
 	@BeforeMethod
-	public void launch() throws InterruptedException
+	public void launch() throws InterruptedException, IOException
 	{
 		driver = browserLaunch();
 		
